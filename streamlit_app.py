@@ -1,5 +1,6 @@
 import streamlit
 streamlit.title('Masooris_web_catalog')
+
 import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
