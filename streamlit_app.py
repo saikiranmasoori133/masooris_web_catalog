@@ -1,4 +1,5 @@
 import streamlit
+import pandas
 streamlit.title('Masooris_web_catalog')
 
 import snowflake.connector
@@ -10,7 +11,7 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
-import pandas
+#import pandas
 streamlit.title('Masoori\'s Amazing Athleisure Catalog')
 # connect to snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
